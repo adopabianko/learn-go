@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 type Books struct {
-	title   string
-	author  string
-	subject string
-	book_id int
+	Title   string
+	Author  string
+	Subject string
+	BookID  int
 }
 
 func main() {
@@ -14,16 +14,16 @@ func main() {
 	var Book2 Books /* Declare Book2 of type Book */
 
 	/* book 1 specification */
-	Book1.title = "Go Programming"
-	Book1.author = "Mahesh Kumar"
-	Book1.subject = "Go Programming Tutorial"
-	Book1.book_id = 6495407
+	Book1.Title = "Go Programming"
+	Book1.Author = "Mahesh Kumar"
+	Book1.Subject = "Go Programming Tutorial"
+	Book1.BookID = 6495407
 
 	/* book 2 specification */
-	Book2.title = "Telecom Billing"
-	Book2.author = "Zara Ali"
-	Book2.subject = "Telecom Billing Tutorial"
-	Book2.book_id = 6495700
+	Book2.Title = "Telecom Billing"
+	Book2.Author = "Zara Ali"
+	Book2.Subject = "Telecom Billing Tutorial"
+	Book2.BookID = 6495700
 
 	/* print Book1 info */
 	printBook(&Book1)
@@ -32,8 +32,8 @@ func main() {
 	printBook(&Book2)
 }
 func printBook(book *Books) {
-	fmt.Printf("Book title : %s\n", book.title)
-	fmt.Printf("Book author : %s\n", book.author)
-	fmt.Printf("Book subject : %s\n", book.subject)
-	fmt.Printf("Book book_id : %d\n", book.book_id)
+	fmt.Printf("Book Title : %s\n", book.Title)
+	fmt.Printf("Book Author : %s\n", book.Author)
+	fmt.Printf("Book Subject : %s\n", book.Subject)
+	fmt.Printf("Book BookID : %d\n", book.BookID)
 }
